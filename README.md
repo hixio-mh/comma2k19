@@ -23,7 +23,7 @@ Eprint = {arXiv:1812.05752},
 The total dataset is ~100GB and can be downloaded [here](http://academictorrents.com/details/65a2fbc964078aff62076ff4e103f18b951c5ddb) It is divided into ~10GB chunks.
 
 ## Example Code
-There is an example data segment in this repo for experimentation. There are also some notebooks with some example code. Including a position benchmark. This code has only been tested on python 2.7 and python 3.6. Make sure to `pip install -r requirements.txt` if you do not have the relevant packages installed already. Additionally, make sure to add the `openpilot` submodule and `notebooks/lib` module to your `PYTHONPATH`.
+There is an example data segment in this repo for experimentation. There are also some notebooks with some example code. Including a position benchmark. This code has only been tested on python 2.7 and python 3.6. Make sure to `pip install -r requirements.txt` if you do not have the relevant packages installed already.
 The examples contain a 1 minute sample segment and some sample notebooks.
 * processed_readers: some examples of data reading and plotting
 * position_benchmarks: example of running the position benchmark used to evaluate fix quality
@@ -93,7 +93,7 @@ processed_log
    |                    bearing (deg)]
    |
    +--raw_gnss_qcom: every row represents a measurement
-   |                 of 1 sattelite at 1 epoch can easily
+   |                 of 1 satellite at 1 epoch can easily
    |                 be manipulated with laika.
    |                 [prn (nmea_id, see laika),
    |                  week of gps_time of reception (gps_week),
@@ -104,7 +104,7 @@ processed_log
    |                  pseudorange_rate (m/s),
    |                  pseudorange_rate_std (m/s)]
    +--raw_gnss_ublox: every row represents a measurement
-                      of 1 sattelite at 1 epoch can easily
+                      of 1 satellite at 1 epoch can easily
                       be manipulated with laika.
                       [prn (nmea_id, see laika),
                        week of gps_time of reception (gps_week),
